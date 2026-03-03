@@ -5,6 +5,49 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         exercicios questions = new exercicios();
 
+        System.out.println("Olá, seja bem vindo ao nosso catálogo de questões de estrutura de repetição!\n" +
+                "Aqui você encontrará diversas questões\n" +
+                "==================================\n" +
+                "[1]Este é um algoritmo que imprime na tela os números de 0 a 30.\n" +
+                "[2]Este é um algoritmo que imprime \n" +
+                "todos os números múltiplos de 3 entre 0 e 100  (while e for)\n" +
+                "[3]Este é um algoritmo que imprime  solicita 10 números do usuário e em seguida exiba a\\n\" +\n" +
+                "                \"mensagem “O número {x} é ímpar/par” de acordo com o valor que foi digitado.  (for/while)\n" +
+                "[4]Este é um algoritmo que solicita uma palavra ao usuário. Caso a palavra “sim”, o\\n\" +\n" +
+                "                \"programa imprime a mensagem “você decidiu continuar” e solicita mais uma vez\\n\" +\n" +
+                "                \"uma palavra ao usuário. Caso o usuário digite “não”, imprima a mensagem “você\\n\" +\n" +
+                "                \"saiu”, e encerre o programa. Para qualquer outra palavra do usuário, exiba a\\n\" +\n" +
+                "                \"mensagem “palavra inválida” e continue solicitando uma palavra correta.\n" +
+                "[5]Este é um algoritmo que solicita a idade de 10 usuários, em seguida exiba a\\n\" +\n" +
+                "                \"média das idades.\n" +
+                "[6]Vamos jogar um jogo de adivinha? chute um número até acertar.\n" +
+                "[7]Este é um algoritmo que pede 10 números inteiros, calcula e mostra a quantidade\\n\" +\n" +
+                "                \"de números pares e a quantidade de números ímpares.\n" +
+                "[8]Este é um algoritmo que solicita dois números ao usuário entre 0 e 20. Em\\n\" +\n" +
+                "                \"seguida imprime na tela todos os números que existem no intervalo.\n" +
+                "[9]Este é um algoritmo que lê um nome de usuário e a sua senha e não aceite a\\n\" +\n" +
+                "                \"senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a\\n\" +\n" +
+                "                \"pedir as informações. As informações devem ser solicitadas enquanto o usuário\\n\" +\n" +
+                "                \"digitar as informações incorretas.\n" +
+                "[10]Este é um algoritmo que lê 5 números e informa a soma e a média dos\\n\" +\n" +
+                "                \"números.\n" +
+                "[11]Este é um algoritmo que solicita um número de 1 á 9 e em seguida\n" +
+                "mostre a tabuada deste número \n" +
+                "[12]Esta panificadora possui a seguinte política de preços:o valor da unidade de pão é de R$0,18 de 1 a\\n\" +\n" +
+                "                \"10 pães, R$0,16 de 11 a 20 pães, R$0,13 de 21 a 30 pães, R$0,09 a partir de de\\n\" +\n" +
+                "                \"31 pães.\"\n" +
+                "\n" +
+                "\n" +
+                "[13]Vamos jogar um jogo de adivinha? chute um número até acertar,\n" +
+                "só que agora com dicas\n" +
+                "[14]Este é um algoritmo que solicita ao usuário 10 números inteiros. Em seguida\\n\" +\n" +
+                "                \"informa o menor deles.\n" +
+                "[15]Este é um algoritmo que solicita ao usuário 10 números inteiros. Em seguida\\n\" +\n" +
+                "                \"informa o maior deles.\n" +
+                "[16]Um atleta olímpico de salto participou das olimpíadas do brasil e fez um total de\\n\" +\n" +
+                "                \"5 saltos. Este é um algoritmo que solicita a distância atingida pelo atleta em cada\\n\" +\n" +
+                "                \"salto e exibe: O tamanho médio dos saltos, o menor salto e o maior salto.\n");
+
         System.out.println("Digite o número da questão que você deseja ver: (1 á 16)");
         int escolhaUser = scan.nextInt();
 

@@ -5,16 +5,12 @@ public class exercicios {
 
     public void quest1(){
         int i = 0;
-
-        System.out.println("Faça um programa que imprima na tela os números de 0 a 30.");
-
         while(i <= 30){
             System.out.println(i);
             i++;
         }
     }
     public void quest2(){
-        System.out.println("Faça um programa que imprima todos os números múltiplos de 3 entre 0 e 100  (while e for");
         int i = 0;
 
         while (i <= 100){
@@ -34,8 +30,6 @@ public class exercicios {
 
     }
     public void quest3(){
-        System.out.println("Faça um programa que solicita 10 números do usuário e em seguida exiba a\n" +
-                "mensagem “O número {x} é ímpar/par” de acordo com o valor que foi digitado.  (for/while");
         for (int i = 1; i <= 10; i++){
             System.out.println(i + "- Insira um número inteiro: ");
             int userNum = scan.nextInt();
@@ -63,11 +57,6 @@ public class exercicios {
         }
     }
     public void quest4(){
-        System.out.println("Faça um programa que solicite uma palavra ao usuário. Caso a palavra “sim”, o\n" +
-                "programa imprime a mensagem “você decidiu continuar” e solicita mais uma vez\n" +
-                "uma palavra ao usuário. Caso o usuário digite “não”, imprima a mensagem “você\n" +
-                "saiu”, e encerre o programa. Para qualquer outra palavra do usuário, exiba a\n" +
-                "mensagem “palavra inválida” e continue solicitando uma palavra correta.");
         for (int perguntas = 1;;perguntas++){
             System.out.println("Digite uma palavra: ");
             String resposta = scan.next();
@@ -89,8 +78,6 @@ public class exercicios {
         }
     }
     public void quest5(){
-        System.out.println("Faça um programa que solicite a idade de 10 usuários, em seguida exiba a\n" +
-                "média das idades.");
         int soma = 0;
 
         System.out.println("Digite o total de pessoas: ");
@@ -111,11 +98,6 @@ public class exercicios {
 
     }
     public void quest6(){
-        System.out.println("Vamos criar um jogo de adivinha. Primeiramente crie uma variável com um\n" +
-                "número secreto. Em seguida faça um looping que solicite um número ao\n" +
-                "usuário. Verifique se o usuário acertou. Caso tenha acertado, mostre a\n" +
-                "mensagem “você acertou! O número secreto é {…}”. O programa somente para de\n" +
-                "solicitar os números quando o número secreto é acertado.");
         int numSec = 20;
 
         while (true)
@@ -136,8 +118,6 @@ public class exercicios {
 
     }
     public void quest7(){
-        System.out.println("Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade\n" +
-                "de números pares e a quantidade de números ímpares.");
         int i;
         int contadorPar = 0;
         int contadorImpar = 0;
@@ -159,9 +139,6 @@ public class exercicios {
 
     }
     public void quest8(){
-        System.out.println("Faça um programa que solicite dois números ao usuário entre 0 e 20. Em\n" +
-                "seguida imprima na tela todos os números que existem no intervalo.");
-
         System.out.println("Digite um número entre 0 e 20: ");
         int n1 = scan.nextInt();
         System.out.println("Digite outro número entre 0 e 20: ");
@@ -206,10 +183,6 @@ public class exercicios {
 
     }
     public void quest9(){
-        System.out.println("Faça um programa que leia um nome de usuário e a sua senha e não aceite a\n" +
-                "senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a\n" +
-                "pedir as informações. As informações devem ser solicitadas enquanto o usuário\n" +
-                "digitar as informações incorretas.");
         for (int login = 1;;login++){
             System.out.println("Digite seu nome: ");
             String nomeUser = scan.next();
@@ -226,8 +199,6 @@ public class exercicios {
 
     }
     public void quest10(){
-        System.out.println("Faça um programa que leia 5 números e informe a soma e a média dos\n" +
-                "números.");
         int soma = 0;
         int i;
         for (i = 1; i <= 5; i++)
@@ -244,11 +215,6 @@ public class exercicios {
 
     }
     public void quest11(){
-        System.out.println("Vamos ajudar uma criança a aprender a tabuada. Faça um programa que solicite\n" +
-                "um número de 1 a 9, e em seguida mostre a tabuada desse número. Ex. Dada a\n" +
-                "entrada 5 seu programa deve mostrar:" +
-                "5 x 1 = 5\n" +
-                "5 x 2 = 10");
         System.out.println("Digite um número entre 1 e 9 que você deseja saber a tabuada: ");
         int tabuada = scan.nextInt();
 
@@ -262,16 +228,6 @@ public class exercicios {
 
     }
     public void quest12(){
-        System.out.println("Você como programador foi convidado a desenvolver um sistema da\n" +
-                "panificadora São José. Essa panificadora adota uma política de preços de\n" +
-                "desconto progressivo. o Cálculo do valor da unidade de pão é de R$0,18 de 1 a\n" +
-                "10 pães, R$0,16 de 11 a 20 pães, R$0,13 de 21 a 30 pães, R$0,09 a partir de de\n" +
-                "31 pães. Faça um algoritmo que receba a quantidade de pães desejada e calcule\n" +
-                "o preço total da compra. Mostre a resposta da seguinte forma:\n" +
-                "1 unidade(s): R$0,x\n" +
-                "2 unidade(s): R$0,2x\n" +
-                "…\n" +
-                "Valor total: R$ x, x");
         double precoUnidadePaes;
         double somaPrecoUnidade = 0;
 
@@ -301,12 +257,6 @@ public class exercicios {
 
     }
     public void quest13(){
-        System.out.println("Vamos fazer um jogo. Defina um número secreto. Em seguida, solicite um\n" +
-                "número ao usuário. Caso o usuário acerte, exiba a mensagem “Parabéns! Você\n" +
-                "acertou.” Caso o valor digitado seja menor que o número secreto, exiba “Ainda\n" +
-                "não. Escolha um número maior”. Caso o valor digitado seja maior, exiba a\n" +
-                "mensagem “Ainda não. Escolha um número menor.” . O jogo só termina quando\n" +
-                "o usuário acertar o número secreto.");
         int numSec = 20;
 
         while (true)
@@ -330,8 +280,6 @@ public class exercicios {
 
     }
     public void quest14(){
-        System.out.println("Faça um programa que solicite ao usuário 10 números inteiros. Em seguida\n" +
-                "informe o menor deles.");
         int numMenor = 0;
 
         System.out.println("Informe dez números e direi qual é o menor entre eles.");
@@ -349,8 +297,6 @@ public class exercicios {
 
     }
     public void quest15(){
-        System.out.println("Faça um programa que solicite ao usuário 10 números inteiros. Em seguida\n" +
-                "informe o maior deles.");
         int numMaior = 0;
 
         System.out.println("Informe dez números e direi qual é o maior entre eles.");
@@ -368,9 +314,6 @@ public class exercicios {
 
     }
     public void quest16(){
-        System.out.println("Um atleta olímpico de salto participou das olimpíadas do brasil e fez um total de\n" +
-                "5 saltos. Faça um programa que solicite a distância atingida pelo atleta em cada\n" +
-                "salto e exiba: O tamanho médio dos saltos, o menor salto e o maior salto.");
         double saltoMaior = 0;
         double saltoMenor = 0;
         double mediaSaltos = 0;
