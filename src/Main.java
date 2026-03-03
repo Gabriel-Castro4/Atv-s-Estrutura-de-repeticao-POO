@@ -48,59 +48,66 @@ public class Main {
                 "                \"5 saltos. Este é um algoritmo que solicita a distância atingida pelo atleta em cada\\n\" +\n" +
                 "                \"salto e exibe: O tamanho médio dos saltos, o menor salto e o maior salto.\n");
 
-        System.out.println("Digite o número da questão que você deseja ver: (1 á 16)");
-        int escolhaUser = scan.nextInt();
+        for(String escolhaUser = "sim";!escolhaUser.equalsIgnoreCase("não");) {
+            System.out.println("Digite o número da questão que você deseja ver: (1 á 16)");
+            int escolhaQuest = scan.nextInt();
 
-        switch (escolhaUser){
-            case 1:
-                questions.quest1();
-            break;
-            case 2:
-                questions.quest2();
-                break;
-            case 3:
-                questions.quest3();
-                break;
-            case 4:
-                questions.quest4();
-                break;
-            case 5:
-                questions.quest5();
-                break;
-            case 6:
-                questions.quest6();
-                break;
-            case 7:
-                questions.quest7();
-                break;
-            case 8:
-                questions.quest8();
-                break;
-            case 9:
-                questions.quest9();
-                break;
-            case 10:
-                questions.quest10();
-                break;
-            case 11:
-                questions.quest11();
-                break;
-            case 12:
-                questions.quest12();
-                break;
-            case 13:
-                questions.quest13();
-                break;
-            case 14:
-                questions.quest14();
-                break;
-            case 15:
-                questions.quest15();
-                break;
-            case 16:
-                questions.quest16();
-                break;
+            switch (escolhaQuest) {
+                case 1:
+                    questions.quest1();
+                    break;
+                case 2:
+                    questions.quest2();
+                    break;
+                case 3:
+                    questions.quest3();
+                    break;
+                case 4:
+                    questions.quest4();
+                    break;
+                case 5:
+                    questions.quest5();
+                    break;
+                case 6:
+                    questions.quest6();
+                    break;
+                case 7:
+                    questions.quest7();
+                    break;
+                case 8:
+                    questions.quest8();
+                    break;
+                case 9:
+                    questions.quest9();
+                    break;
+                case 10:
+                    questions.quest10();
+                    break;
+                case 11:
+                    questions.quest11();
+                    break;
+                case 12:
+                    questions.quest12();
+                    break;
+                case 13:
+                    questions.quest13();
+                    break;
+                case 14:
+                    questions.quest14();
+                    break;
+                case 15:
+                    questions.quest15();
+                    break;
+                case 16:
+                    questions.quest16();
+                    break;
 
+            }
+            System.out.println("Você deseja continuar?");
+            escolhaUser = scan.next();
+            if (escolhaUser.equalsIgnoreCase("não")){
+                System.out.println("Obrigado por usar nosso sistema! Até a próxima");
+            }
         }
     }
 }
